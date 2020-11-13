@@ -1,0 +1,209 @@
+/* Register Form starts*/
+
+body {
+	background: #ECE9E6;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #FFFFFF, #ECE9E6);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: url('https://i.pinimg.com/originals/a4/8a/02/a48a0246a6b5d61a08dd65e42635dba3.jpg');
+}
+
+.homebutton{
+	border:1.5px solid white;
+	font-weight: 150;
+	padding:5px 8px;
+	border-radius: 5px;
+	color:white;
+	font-size:20px;
+	position:absolute;
+	top:30px;
+	left:30px;
+}
+
+.homebutton:hover{
+	color:black;
+	background-color: rgba(255,255,255,0.8);
+	text-decoration: none;
+}
+
+#regForm {
+	background-color: rgb(0, 0, 0);
+	margin: 100px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 40px;
+	width: 50%;
+	min-width: 300px;
+	opacity: 0.8;
+	border-radius: 15px;
+	color: rgba(255, 255, 255, 1) !important;
+	box-shadow: 7px 7px 10px #252525;
+}
+#loginForm{
+	background-color: rgb(0, 0, 0);
+	margin: 180px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 40px;
+	width: 50%;
+	min-width: 300px;
+	opacity: 0.8;
+	border-radius: 15px;
+	color: rgba(255, 255, 255, 1) !important;
+	box-shadow: 7px 7px 10px #252525;
+}
+
+.yoo {
+	color: white;
+}
+
+.title {
+	color: rgba(255, 255, 255, 1) !important;
+	text-align: center;
+	font-size: 26px;
+	margin-top: 0;
+}
+
+.title-text{
+	text-align: center;
+}
+
+.invisible{
+	display:none;
+}
+
+.warning-message{
+	color: rgb(224, 122, 122);
+	padding: 10px 20px;
+	font-size: 17px;
+	font-family: Raleway;
+	cursor: pointer;
+	margin: auto;
+	height: 100%;
+	width: 70%;
+	border-radius: 30px 30px 30px 30px;
+	border: 2px solid rgb(250, 48, 48);
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.tab .form-control {
+	min-height: 38px;
+	padding-left: 5px;
+	box-shadow: none !important;
+	border-width: 0 0 1px 0;
+	border-radius: 0;
+}
+
+.tab .form-control:focus {
+	border-color: rgba(255, 255, 255, 1);
+}
+
+input {
+	padding: 10px;
+	/*width: 100%;*/
+	background-color: #000000 !important;
+	font-family: Raleway;
+	color: rgba(255, 255, 255, 1);
+}
+
+/* Mark input boxes that gets an error on validation: */
+
+/* Hide all steps by default: */
+
+.form-control, .form-control:focus, .input-group-addon {
+	border-color: rgba(255, 255, 255, 1);
+	border-radius: 0;
+	color: rgba(255, 255, 255, 1);
+}
+
+.tab .input-group-addon {
+	max-width: 42px;
+	text-align: center;
+	background: none;
+	border-bottom: 1px solid #ffffff;
+	padding-right: 5px;
+	border-radius: 0;
+}
+
+.tab .fa {
+	font-size: 21px;
+	position: relative;
+	top: 6px;
+}
+
+select {
+	outline: none;
+	min-height: 38px;
+	box-shadow: none !important;
+	border-width: 0 0 1px 0;
+	border-radius: 0;
+	border-color: #e1e1e1;
+	color: rgb(255, 255, 255);
+}
+
+
+
+
+/* Register form ends*/
+
+button {
+	background-color: #4CAF50;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	font-family: Raleway;
+	cursor: pointer;
+	margin: 10px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.reset-button, .register-button {
+	height: 100%;
+	width: 12vw;
+	border-radius: 30px 30px 30px 30px;
+	margin: 0.5px;
+	border: 2px solid snow;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.reset-button:hover, .register-button:hover {
+	color: black;
+	background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 800px) {
+	#regForm{
+		width:75%;
+	}
+
+	#loginForm{
+		width:80%;
+	}
+
+	.warning-message{
+		width:80%;
+		padding:5px 10px;
+	}
+	
+	.reset-button, .register-button {
+		height: 100%;
+		width: 43%;
+	}
+}
+
+a{
+	color:rgb(17, 238, 17);
+}
