@@ -26,7 +26,7 @@
         .topnav {
             position: absolute;
             width:100%;
-            background-color:rgba(0,0,0,0.8);
+            background-color:rgba(0,0,0,0.7);
             top:0;
             border-bottom:2px solid rgb(0,0,0);
         }
@@ -80,7 +80,7 @@
             color: rgba(255,205,0, 1);
             font-size: 20px;
             text-align: center;
-            font-family: sans-serif;
+            font-family: Courier !important;
         }
         .inner{
             margin: 0;
@@ -163,8 +163,6 @@
             padding-bottom: 20px;
             padding-top: 20px;
         }
-
-
         
         .blog-image{
             margin: 0;
@@ -197,6 +195,7 @@
             
 
         #why{
+            font-family:Courier ;
             color: purple;
         }
 
@@ -255,7 +254,7 @@
 
 
     <div class="banner">
-        <img src="../images/home/campingireland.jpg" >
+        <img src="../images/home/final.jpg" >
         <div class="topnav">
         <?php
             include('../../mysqli_connect.php');   
@@ -360,7 +359,7 @@
 <section id="why-us">
 
   
-<div class="heading" id="offer-text-head"><h1>--------- What do we offer ---------</h1></div>
+<div class="heading" id="offer-text-head"><h1><span style="color:white">---------</span> What do we offer <span style="color:white">---------</span></h1></div>
 
     
     <div class="heading" id="offer-text"> Obivously you wont remember the time  </div>
@@ -405,7 +404,7 @@
 
 <section id ="youtubesection">
 
-  <div class="heading"><h1>--------- YouTube Videos ---------</h1></div>
+  <div class="heading"><h1><span style="color:white">---------</span> Youtube Videos <span style="color:white">---------</span></h1></div>
  <center>
 <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/gTTrjh3LZuU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center> 
@@ -418,7 +417,7 @@
 <section id="blog-section">
 
   
-  <div class="heading" id="blog-main-head"><h1> --------- OUR BLOGS ---------</h1></div>
+  <div class="heading" id="blog-main-head"><h1><span style="color:white">---------</span> Our Blogs <span style="color:white">---------</span></h1></div>
 
   
 <div class="blog-card">
@@ -427,7 +426,7 @@
   
     <h4 class="blog-heading">How Trekking can heal a broken you</h4>
     
-    <a class="blog-link" href="#">READ MORE</a>
+    <a class="blog-link" href="#">Read More</a>
     
 
 </div>
@@ -439,7 +438,7 @@
   
     <h4 class="blog-heading">Kedarnatha - A Complete Guide</h4>
     
-    <a class="blog-link" href="#">READ MORE</a>
+    <a class="blog-link" href="#">Read More</a>
     
 
 </div>
@@ -451,7 +450,7 @@
   
     <h4 class="blog-heading">Get Lost in the beauty of Himalaya</h4>
 
-    <a class="blog-link" href="#">READ MORE</a>
+    <a class="blog-link" href="#">Read More</a>
     
 
 </div>
