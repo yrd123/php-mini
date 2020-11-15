@@ -7,7 +7,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
+    <?php 
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    ?>
     <style>
+
+        body{
+            background-color:black;
+        }
+
+        /*top navbar and banner*/
         .banner{
             position: relative;
         }
@@ -51,15 +62,184 @@
 
         img{
             height: 51.7vw;
+            border-bottom: 1px solid white;
+        }
+
+         /* end of top navbar and banner*/
+
+        /* grid */
+    
+        /*end of grid */
+
+
+
+         /* sanyam */
+         .heading{
+            right: 0;
+            left: 0;
+            color: rgba(255,205,0, 1);
+            font-size: 20px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .inner{
+            margin: 0;
+            padding-top: 0;
+            text-align: center;
+            color: purple;
+            font-family: sans-serif;
+
         }
 
         
+        
+            /* border-radius: 15px; */
+            /* text-align: justify; */
+            /* align-self: center; */
+
+        .why-us-card{
+            display: inline-block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 200px;
+            width: 200px;
+            background:black;
+            color: white;
+            height:auto ;
+            padding: 10px;
+            text-align: center;
+            right: auto;
+            left: auto;
+            /* border-right: rgba(0,0,0,0.6) solid 2px; */
+        }
+
+        #offer-text{
+            color: white;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            font-family: Mistral;
+            font-size: 25;
+        }
+
+        
+        #offer-text-head{
+            color: rgba(255,205,0, 1);
+            margin-top: 5px;
+            margin-bottom: 0px;
+            font-family: sans-serif;
+            font-size: 25;
+        }
+
+        #youtubesection{
+
+        background-image: url("../images/home/youtube.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+        background-size: cover;
+        border-top:1px solid white;
+        padding-bottom:15px;
+        /* background-color: purple; */
+
+        }
+
+
+        .blog-card{
+            display: inline-block;
+            margin-top: 15px;
+            margin-right: 10px;
+            width: 30%;
+            background:rgb(0,0,0);
+            height:auto ;
+            text-align: center;
+            color:white;
+            
+        }
+
+        #blog-section{
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: black;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+
+        
+        .blog-image{
+            margin: 0;
+            width: 300px;
+            height:200px ;
+            border-radius:10px;
+        }
+
+        .blog-link{
+            color: red;
+            font-family: sans-serif;
+            font-size: 10;
+        }
+
+        #outer-blog{
+            border-top:1px solid white;
+            background-color: black;
+        }
+
+        #blog-main-head{
+           
+            color: rgba(255,205,0, 1);
+        }
+
+        .blog-heading{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+
+        }
+            
+
+        #why{
+            color: purple;
+        }
+
+        #why-us{
+            border-top:1px solid white;
+            background-color: black;
+        }
+
+        .why-us-images{
+            margin: 0;
+            width: 120px;
+            height: 120px ;
+            color:white;
+        }
+
+        .image {
+            display: block;
+            width: 268px;
+            height: 300px;
+        }
+
+        footer {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            left: 0;
+            bottom: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding:20px;
+            border-top:1px solid white;
+        }
         
     </style>
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         include '../../mysqli_connect.php';
-        session_start();
+        if(!isset($_SESSION)) 
+        { 
+            session_start(); 
+        }
+        
         $delete_query="delete from user_trekker where email={$_SESSION['username']}";
         if ($link->query($delete_query) === TRUE) {
             header("location:logout.php");
@@ -72,13 +252,16 @@
     ?>
 </head>
 <body style="margin: 0;">
+
+
     <div class="banner">
         <img src="../images/home/campingireland.jpg" >
         <div class="topnav">
         <?php
-            include('../../mysqli_connect.php');
-            session_start();
-            
+            include('../../mysqli_connect.php');   
+            if(!isset($_SESSION)){
+                session_start();
+            }
             if(!isset($_SESSION['username']) or !isset($_SESSION['loggedin']) or $_SESSION['loggedin']!==true){
                 echo "<a href='login.php'>LogIn</a>";
             }
@@ -108,7 +291,11 @@
                 <br>
                 <?php
                     include '../../mysqli_connect.php';
-                    session_start();
+                    if(!isset($_SESSION)) 
+                    { 
+                        session_start(); 
+                    }
+                   
                     $select_query="select * from user;";
                     $rows=mysqli_query($link,$select_query);
                     while($row=mysqli_fetch_array($rows,MYSQLI_BOTH))
@@ -155,6 +342,129 @@
       
         </div>
       </div>
+
+
+
+
+      <!--grid1 start -->
+      <!--grid1 end -->
+      <!--grid2 start -->
+      <!--grid2 end -->
+   
+    
       
+        <!-- sanyam -->
+       
+
+
+<section id="why-us">
+
+  
+<div class="heading" id="offer-text-head"><h1>--------- What do we offer ---------</h1></div>
+
+    
+    <div class="heading" id="offer-text"> Obivously you wont remember the time  </div>
+
+    
+    <div class="heading" id="offer-text"> You spent in Class or an Office </div>
+
+    
+    <div class="heading" id="offer-text"> We do whatever makes people happy, mostly travel  </div>
+
+    
+    <div class="heading" id="offer-text"> because that’s something we do best, creating </div>
+
+    
+    <div class="heading" id="offer-text"> cherishable memories and priceless smiles.</div>
+
+    
+    
+    <div class="heading" id="offer-text"> So go travel that Godamnnn place ! </div>
+  
+  <div class="why-us-card">
+    <img src="../images/home/why_us1.png" alt="Avatar" class="why-us-images">
+    
+    <h3 class="inner" id="why">HOLIDAY CAMPING</h3>
+  </div>
+
+  <div class="why-us-card">
+    <img src="../images/home/why_us2.png" alt="Avatar" class="why-us-images">
+    
+    <h3 class="inner" id="why">HOLIDAY CAMPING</h3>
+  </div>
+  
+  <div class="why-us-card">
+    <img src="../images/home/why_us3.png" alt="Avatar" class="why-us-images">
+    
+    <h3 class="inner" id="why">HOLIDAY CAMPING</h3>
+  </div>
+  
+  
+</section>
+
+
+<section id ="youtubesection">
+
+  <div class="heading"><h1>--------- YouTube Videos ---------</h1></div>
+ <center>
+<iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/gTTrjh3LZuU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center> 
+<div></div>
+
+</section>
+
+<section id="outer-blog">
+
+<section id="blog-section">
+
+  
+  <div class="heading" id="blog-main-head"><h1> --------- OUR BLOGS ---------</h1></div>
+
+  
+<div class="blog-card">
+  <img src="../images/home/blog1.jpg" alt="Avatar" class="blog-image">
+
+  
+    <h4 class="blog-heading">How Trekking can heal a broken you</h4>
+    
+    <a class="blog-link" href="#">READ MORE</a>
+    
+
+</div>
+
+
+<div class="blog-card">
+  <img src="../images/home/blog3.jpg" alt="Avatar" class="blog-image">
+
+  
+    <h4 class="blog-heading">Kedarnatha - A Complete Guide</h4>
+    
+    <a class="blog-link" href="#">READ MORE</a>
+    
+
+</div>
+
+
+<div class="blog-card">
+  <img src="../images/home/blog2.jpg" alt="Avatar" class="blog-image">
+
+  
+    <h4 class="blog-heading">Get Lost in the beauty of Himalaya</h4>
+
+    <a class="blog-link" href="#">READ MORE</a>
+    
+
+</div>
+
+
+
+</section>
+</section>
+
+<footer>
+ <p> COPYRIGHT @WORLD OF TREKKERS </p>
+</footer>
+    
+
 </body>
 </html>
