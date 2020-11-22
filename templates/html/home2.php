@@ -482,7 +482,7 @@
                         else{                
                             echo "<form method='POST' action='book.php'>
                             <input type='hidden' name='tripId' value='1' />
-                            <button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>
+                            <button type='submit' class='btn btn-success' data-toggle='modal'>Confirm</button>
                             </form>";
                         }
                     ?>
@@ -573,7 +573,7 @@
                         else{                
                             echo "<form method='POST' action='book.php'>
                             <input type='hidden' name='tripId' value='2' />
-                            <button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>
+                            <button type='submit' class='btn btn-success' data-toggle='modal'>Confirm</button>
                             </form>";
                         }
                     ?>
@@ -663,7 +663,7 @@
                         else{                
                             echo "<form method='POST' action='book.php'>
                             <input type='hidden' name='tripId' value='3' />
-                            <button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>
+                            <button type='submit' class='btn btn-success' data-toggle='modal'>Confirm</button>
                             </form>";
                         }
                     ?>
@@ -753,7 +753,7 @@
                         else{                
                             echo "<form method='POST' action='book.php'>
                             <input type='hidden' name='tripId' value='4' />
-                            <button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>
+                            <button type='submit' class='btn btn-success' data-toggle='modal'>Confirm</button>
                             </form>";
                         }
                     ?>
@@ -842,7 +842,7 @@
                         else{                
                             echo "<form method='POST' action='book.php'>
                             <input type='hidden' name='tripId' value='5' />
-                            <button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>
+                            <button type='submit' class='btn btn-success' data-toggle='modal'>Confirm</button>
                             </form> ";
                         }
                     ?>
