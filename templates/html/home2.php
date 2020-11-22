@@ -480,7 +480,10 @@
                             echo "<a href='login.php'><button type='button' class='btn btn-primary' data-toggle='modal'>Login</button></a>";
                         }
                         else{                
-                            echo "<button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>";
+                            echo "<form method='POST' action='book.php'>
+                            <input type='hidden' name='tripId' value='1' />
+                            <button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>
+                            </form>";
                         }
                     ?>
                     
@@ -568,7 +571,10 @@
                             echo "<a href='login.php'><button type='button' class='btn btn-primary' data-toggle='modal'>Login</button></a>";
                         }
                         else{                
-                            echo "<button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>";
+                            echo "<form method='POST' action='book.php'>
+                            <input type='hidden' name='tripId' value='2' />
+                            <button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>
+                            </form>";
                         }
                     ?>
                     
@@ -655,7 +661,10 @@
                             echo "<a href='login.php'><button type='button' class='btn btn-primary' data-toggle='modal'>Login</button></a>";
                         }
                         else{                
-                            echo "<button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>";
+                            echo "<form method='POST' action='book.php'>
+                            <input type='hidden' name='tripId' value='3' />
+                            <button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>
+                            </form>";
                         }
                     ?>
                     
@@ -742,7 +751,10 @@
                             echo "<a href='login.php'><button type='button' class='btn btn-primary' data-toggle='modal'>Login</button></a>";
                         }
                         else{                
-                            echo "<button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>";
+                            echo "<form method='POST' action='book.php'>
+                            <input type='hidden' name='tripId' value='4' />
+                            <button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>
+                            </form>";
                         }
                     ?>
                     
@@ -785,7 +797,6 @@
             <div class="modal-footer">
                     <button type="button" class="btn btn-danger"data-dismiss="modal">Cancel</button>
                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookModal5">Book</button>
-               
             </div>
           </div>
       
@@ -829,7 +840,10 @@
                             echo "<a href='login.php'><button type='button' class='btn btn-primary' data-toggle='modal'>Login</button></a>";
                         }
                         else{                
-                            echo "<button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>";
+                            echo "<form method='POST' action='book.php'>
+                            <input type='hidden' name='tripId' value='5' />
+                            <button type='button' class='btn btn-success' data-toggle='modal'>Confirm</button>
+                            </form> ";
                         }
                     ?>
                     
