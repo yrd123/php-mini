@@ -43,7 +43,7 @@
 			$_SESSION["username"]=$email;
 			$_SESSION["loggedin"]=true;
 			if(isset($_SESSION["username"])){
-				header("location:home2.php");
+				header("location:homepage.php");
 			}
 			else{
 				header("location:login.php");
@@ -70,7 +70,7 @@
 </head>
 
 <body>
-<a class="homebutton" href="home2.php"><i class="fa fa-caret-left" ></i>&nbsp;&nbsp;Home</a>
+<a class="homebutton" href="homepage.php"><i class="fa fa-caret-left" ></i>&nbsp;&nbsp;Home</a>
 	<form id="loginForm" name="loginForm" action="login.php" name="RegisterForm" onsubmit="return validatelogin()" method="POST">
 		<div class="yoo">
 			<h4 class="title">Login</h4>

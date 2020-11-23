@@ -65,7 +65,7 @@
                                 box-shadow: 7px 7px 10px #252525;'>You have been registered for the trek.
                                 <br>
                         </div>
-                        <center><a class='homebutton' href='home2.php'><i class='fa fa-caret-left'></i>&nbsp;&nbsp;Home</a></center>";
+                        <center><a class='homebutton' href='homepage.php'><i class='fa fa-caret-left'></i>&nbsp;&nbsp;Home</a></center>";
 				}
 				else
 				{
@@ -82,7 +82,7 @@
 								color: rgba(255,205,0, 1);
 								box-shadow: 7px 7px 10px #252525;'>You have not been registered.
                         </div>
-                        <center><a class='homebutton' href='home2.php'><i class='fa fa-caret-left'></i>&nbsp;&nbsp;Home</a></center>";
+                        <center><a class='homebutton' href='homepage.php'><i class='fa fa-caret-left'></i>&nbsp;&nbsp;Home</a></center>";
 				}
 		
         }

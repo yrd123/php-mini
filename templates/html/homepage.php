@@ -6,285 +6,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>World of Trekkers</title>
+    <link rel="stylesheet" type="text/css" href="../css/homepage.css">
     <?php 
     if(!isset($_SESSION)){
         session_start();
     }
     ?>
     <style>
-
-        body{
-            background-color:black;
-        }
-
-        .black{
-            background:rgb(0,0,0);
-        }
-
-        /*top navbar and banner*/
-        .banner{
-            position: relative;
-        }
-
-        .topnav {
-            position: absolute;
-            width:100%;
-            background-color:rgba(0,0,0,0.7);
-            top:0;
-            border-bottom:2px solid rgb(0,0,0);
-        }
-
-            /* Style the links inside the navigation bar */
-        .topnav a {
-            float: right;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 15px 19px;
-            text-decoration: none;
-            font-size: 1.2vw;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-        }
-
-        .topnav a img{
-            padding:8px;
-            float:left;
-            left:0;
-        }
-            /* Change the color of links on hover */
-        .topnav a:hover {
-            background-color:rgba(255,255,255,0.8);
-            color:black;
-        }
-
-            /* Add a color to the active/current link */
-        .topnav a.active {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        
-
-         /* end of top navbar and banner*/
-
-        /* grid */
-        
-        /* purchase */
-        #buy{
-          margin-top:10px;
-          margin-bottom:15px;
-        }
-
-        .purchase-card{
-            display: inline-block;
-            margin-top: 15px;
-            margin-right: 7px;
-            background:rgb(0,0,0);
-            height:auto ;
-            color:white;
-            border-radius: 10px;
-            border:3.5px solid white;
-            transition: margin 1s ease;
-            
-          }
-
-          .trekk{
-            margin: 0;
-            width: 286px;
-            height:176px ;
-            border-radius: 7px;
-            
-            border-bottom:5px solid white;
-          }
-     
-          
-        /* purchase ends*/
-
-    
-        /*end of grid */
-
-
-
-         /* sanyam */
-
-         .heading{
-            right: 0;
-            left: 0;
-            color: rgba(255,205,0, 1);
-            font-size: 1.5em !important;
-            text-align: center;
-            font-family: Comic Sans MS !important;
-        }
-
-        .inner{
-            margin: 0;
-            padding-top: 0;
-            text-align: center;
-            color: purple;
-            font-family: sans-serif;
-
-        }
-        
-            /* border-radius: 15px; */
-            /* text-align: justify; */
-            /* align-self: center; */
-
-        .why-us-card{
-            display: inline-block;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            margin-left: 200px;
-            width: 200px;
-            background:black;
-            color: white;
-            height:auto ;
-            padding: 10px;
-            text-align: center;
-            right: auto;
-            left: auto;
-            /* border-right: rgba(0,0,0,0.6) solid 2px; */
-        }
-
-        #offer-text{
-            color: white;
-            margin-top: 5px;
-            margin-bottom: 0px;
-            font-family: Mistral;
-            font-size: 25;
-        }
-        
-        #offer-text-head{
-            color: rgba(255,205,0, 1);
-            margin-top: 5px;
-            margin-bottom: 0px;
-            font-family: sans-serif;
-            font-size: 25;
-        }
-
-        .card-group{
-            margin:10px;
-        }
-
-        .card{
-            margin:15px;
-            
-        }
-
-        .card-body{
-            border-bottom:1px solid black;
-            border-top:1px solid black;
-            color:white;
-            background:black;
-            margin:3px;
-        }
-
-        .card-footer{
-            border-top:1px solid black;
-            color:white;
-            background:black;
-            margin:3px;
-        }
-
-        #youtubesection{
-
-        background-image: url("../images/home/youtube.jpg");
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-attachment: fixed;
-        background-size: cover;
-        border-top:1px solid white;
-        padding-bottom:15px;
-        /* background-color: purple; */
-
-        }
-
-        .blog-card{
-            display: inline-block;
-            margin-top: 15px;
-            margin-right: 10px;
-            width: 30%;
-            background:rgb(0,0,0);
-            height:auto ;
-            text-align: center;
-            color:white;
-            
-        }
-
-        #blog-section{
-            margin-left: 10%;
-            margin-right: 10%;
-            background-color: black;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-        
-        .blog-image{
-            margin: 0;
-            width: 300px;
-            height:200px ;
-            border-radius:10px;
-        }
-
-        .blog-link{
-            color: red;
-            font-family: sans-serif;
-            font-size: 10;
-        }
-
-        #outer-blog{
-            border-top:1px solid white;
-            background-color: black;
-        }
-
-        #blog-main-head{
-           
-            color: rgba(255,205,0, 1);
-        }
-
-        .blog-heading{
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color: white;
-
-        }
-            
-
-        #why{
-            font-family:Courier ;
-            color: purple;
-        }
-
-        #why-us{
-            border-top:1px solid white;
-            background-color: black;
-            border-bottom:1px solid white;
-        }
-
-        .why-us-images{
-            margin: 0;
-            width: 120px;
-            height: 120px ;
-            color:white;
-        }
-
-        .image {
-            display: block;
-            width: 268px;
-            height: 300px;
-        }
-
-        footer {
-            position: relative;
-            width: 100%;
-            height: 60px;
-            left: 0;
-            bottom: 0;
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding:20px;
-            border-top:1px solid white;
-        }
+       
         
 
     </style>
@@ -311,7 +41,7 @@
 
 
     <div class="banner">
-        <img src="../images/home/final.jpg" style="width:100%;">
+        <img src="../images/home/banner.jpg" style="width:100%;">
         <div class="topnav">
         <?php
             include('../../mysqli_connect.php');   
@@ -435,7 +165,7 @@
 <div class="card-group" style="padding-bottom:15px;border-bottom:1px solid white;">
 <!-- card1 -->
   <div class="card" style="border-radius:10px;">
-    <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
+    <img class="card-img-top" src="../images/home/background.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
     <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
       <h5 class="card-title">Kalsubai</h5>
       <p class="card-text"><span>5400 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
@@ -527,7 +257,7 @@
 
   <!-- card2 -->
   <div class="card" style="border-radius:10px;">
-    <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
+    <img class="card-img-top" src="../images/home/haridhchandragad.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
     <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
       <h5 class="card-title">Peb Fort</h5>
       <p class="card-text"><span>1624 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
@@ -616,7 +346,7 @@
   
   <!-- card3 -->
   <div class="card" style="border-radius:10px;">
-    <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
+    <img class="card-img-top" src="../images/home/mountain.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
     <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
       <h5 class="card-title">Irshalgad</h5>
       <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
@@ -707,7 +437,7 @@
   
   <!-- card4 -->
   <div class="card" style="border-radius:10px;">
-    <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
+    <img class="card-img-top" src="../images/home/kalsubai.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
     <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
       <h5 class="card-title">Visapur</h5>
       <p class="card-text"><span>1780 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
@@ -798,7 +528,7 @@
   
   <!-- card5 -->
   <div class="card" style="border-radius:10px;">
-    <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
+    <img class="card-img-top" src="../images/home/peb.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
     <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
       <h5 class="card-title">Dhak Bahiri</h5>
       <p class="card-text"><span>1950 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
@@ -913,7 +643,7 @@ if(isset($_SESSION['username']) and isset($_SESSION['loggedin']) and $_SESSION['
     if($row['trip_id']==$place['tripId'] ){
      
      echo "<div class='purchase-card'>
-      <img src='../images/home/peb.jpg' alt='Avatar' class='trekk'>
+      <img src='../images/home/trip.jpg' alt='Avatar' class='trekk'>
       <div class='card-body'>
       <h5 class='card-title'>{$place['trip_name']}</h5>
           <p class='card-text'><span>{$place['height']} ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='align-item:right;'>{$place['days']}</span></p>

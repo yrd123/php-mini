@@ -22,7 +22,7 @@
             $update_query = "update user set full_name='$full_name', age='$age', contact_number='$contact_number', gender='$gender' where email='$email'";
             echo "$update_query";
             if (mysqli_query($link,$update_query)) {
-                header("location:home2.php");
+                header("location:homepage.php");
             } else {
             echo "Error updating record: " . mysqli_error($link);
             }

@@ -100,7 +100,7 @@
 </head>
 
 <body>
-	<a class="homebutton" href="home2.php"><i class="fa fa-caret-left" ></i>&nbsp;&nbsp;Home</a>
+	<a class="homebutton" href="homepage.php"><i class="fa fa-caret-left" ></i>&nbsp;&nbsp;Home</a>
 	<form id="regForm" name="regForm" action="register.php" name="RegisterForm" onsubmit="return validatesignup()" method="POST">
 		<div class="yoo">
 			<h4 class="title">Register</h4>
