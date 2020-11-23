@@ -439,8 +439,8 @@
     <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
     <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
       <h5 class="card-title">Kalsubai</h5>
-      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
-      <p class="card-text">Rs. 5000</p>
+      <p class="card-text"><span>5400 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
+      <p class="card-text">Rs. 1500</p>
     </div>
     <div class="card-footer">
       <center>
@@ -459,7 +459,8 @@
             <div class="modal-body">
               <p>
                 <br>
-                abc1
+                Also    known as Mount Everest of Maharashtra !Kalsubai Peak Trek with a height of 1646 meters or 5400 Feet is famous as the highest peaks in Maharashtra. Kalsubai Mountain lies in the Sahyadri mountain range falling under Kalsubai Harishchandragad Wildlife Sanctuary. Kalsubai Height being the highest peak, it commands a beautiful view. Since Bhandardara Dam and Kalsubai Peak is extremely famous, enough effort has been made to make this trek easy. There are steel railings, chains, and ladders at places where it is difficult to climb. 
+              
               </p>
             </div>
             <div class="modal-footer">
@@ -529,9 +530,9 @@
   <div class="card" style="border-radius:10px;">
     <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
     <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
-      <h5 class="card-title">Kalsubai</h5>
-      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
-      <p class="card-text">Rs. 5000</p>
+      <h5 class="card-title">Peb Fort</h5>
+      <p class="card-text"><span>1624 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
+      <p class="card-text">Rs. 800</p>
     </div>
     <div class="card-footer">
       <center>
@@ -544,13 +545,14 @@
           <!-- Modal content-->
           <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:90px;border:2px solid white;">
             <div class="modal-header">
-              <center><h4 class="modal-title" >Kalsubai</h4></center>
+              <center><h4 class="modal-title" >Peb Fort</h4></center>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
               <p>
                 <br>
-                abc2
+                Hilltop fort structure reachable by a popular monsoon trek through lush greenery & waterfalls.Trekking near Mumbai to Peb Fort or Vikatgad around 4 km from Neral Station a very enjoyable trek in Monsoon season passing through a local village, waterfalls this trek offers all ladders, rock patches, caves, dense forest, ridge walking. Trek can be combined with Matheran visit or you can trek till Panorama point Matheran till here. Excellent for new trekkers a village guide or guided tour will make the trek more enjoyable.
+             
               </p>
             </div>
             <div class="modal-footer">
@@ -583,7 +585,7 @@
                             echo "Login to book this trip...";
                         }
                         else{                
-                            echo "Confirm Booking to Kalsubai?";
+                            echo "Confirm Booking to Peb Fort?";
                         }
                     ?>
                 </p>
@@ -617,9 +619,9 @@
   <div class="card" style="border-radius:10px;">
     <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
     <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
-      <h5 class="card-title">Kalsubai</h5>
+      <h5 class="card-title">Irshalgad</h5>
       <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
-      <p class="card-text">Rs. 5000</p>
+      <p class="card-text">Rs. 800</p>
     </div>
     <div class="card-footer">
       <center>
@@ -632,13 +634,14 @@
           <!-- Modal content-->
           <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:90px;border:2px solid white;">
             <div class="modal-header">
-              <center><h4 class="modal-title" >Kalsubai</h4></center>
+              <center><h4 class="modal-title" >Irshalgad</h4></center>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
               <p>
                 <br>
-                abc3
+                Irshalgad derived its name from Irshal that means the top and 'gad' means the fort. This fort served as a watchtower in previous times due to its pinnacle. It was easy to keep a check over enemy movements around the fort. This trek to Irshalgad fort will test your endurance all through the trek putting forth various inclines and flat trails.
+            
               </p>
             </div>
             <div class="modal-footer">
@@ -660,7 +663,7 @@
             <!-- Modal content-->
             <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:190px;border:2px solid white;">
                 <div class="modal-header">
-                <center><h4 class="modal-title" >Kalsubai</h4></center>
+                <center><h4 class="modal-title" >Irshalgad</h4></center>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -673,7 +676,7 @@
                             echo "Login to book this trip...";
                         }
                         else{                
-                            echo "Confirm Booking to Kalsubai?";
+                            echo "Confirm Booking to Irshalgad?";
                         }
                     ?>
                 </p>
@@ -707,9 +710,9 @@
   <div class="card" style="border-radius:10px;">
     <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
     <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
-      <h5 class="card-title">Kalsubai</h5>
-      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
-      <p class="card-text">Rs. 5000</p>
+      <h5 class="card-title">Visapur</h5>
+      <p class="card-text"><span>1780 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
+      <p class="card-text">Rs. 2000</p>
     </div>
     <div class="card-footer">
       <center>
@@ -722,13 +725,14 @@
           <!-- Modal content-->
           <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:90px;border:2px solid white;">
             <div class="modal-header">
-              <center><h4 class="modal-title" >Kalsubai</h4></center>
+              <center><h4 class="modal-title" >Visapur</h4></center>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
               <p>
                 <br>
-                abc4
+                Maharashtra is home to a number of spectacular monsoon destinations. While some of these are great places for family vacations and treat you to beautiful views without you having to make any effort, there are some which are ideal for trekkers who like to earn their views. Trekking is not just great for fitness, it is also one of the most refreshing activities one can indulge in. Be it a solo trek or one with a group, trekking is a rewarding experience. As you make the climb to reach your destination, every nook and corner of the hills presents you with a unique challenge, adventure, view and unspoiled piece of nature. Maharashtra has some excellent trekking destinations for all kinds of trekkers. One such destination which is perfect for beginners is the Visapur fort 
+             
               </p>
             </div>
             <div class="modal-footer">
@@ -750,7 +754,7 @@
             <!-- Modal content-->
             <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:190px;border:2px solid white;">
                 <div class="modal-header">
-                <center><h4 class="modal-title" >Kalsubai</h4></center>
+                <center><h4 class="modal-title" >Visapur</h4></center>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -763,7 +767,7 @@
                             echo "Login to book this trip...";
                         }
                         else{                
-                            echo "Confirm Booking to Kalsubai?";
+                            echo "Confirm Booking to Visapur?";
                         }
                     ?>
                 </p>
@@ -797,9 +801,9 @@
   <div class="card" style="border-radius:10px;">
     <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
     <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
-      <h5 class="card-title">Kalsubai</h5>
-      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
-      <p class="card-text">Rs. 5000</p>
+      <h5 class="card-title">Dhak Bahiri</h5>
+      <p class="card-text"><span>1950 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
+      <p class="card-text">Rs. 6000 </p>
     </div>
     <div class="card-footer">
       <center>
@@ -812,13 +816,15 @@
           <!-- Modal content-->
           <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:90px;border:2px solid white;">
             <div class="modal-header">
-              <center><h4 class="modal-title" >Kalsubai</h4></center>
+              <center><h4 class="modal-title" >Dhak Bahiri</h4></center>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
               <p>
                 <br>
-                abc5
+                The earth has music for those who listen and this time the melodious symphony of mother Earth took me to one of the cave trek in the Sahyadri hill range. A trek that is definitely not for the fainthearted person. A trek where one needs an assistance of a rope to make it through. A trek where one mistake and you’re dead. Any guesses? Yes, I am talking about the “Dhak Bahiri Cave Trek”.
+                Located on the Dhak peak in the Jambhavali region, to reach the Dhak Bahiri cave, one needs to ascend a col, walk along a scarp and finally a vertical ascent of almost 70-degree gradient. A small mistake and you will find yourself somewhere deep in the valleys of Sahayadri’s. Despite being so risky, the trek is quite popular among the Mumbaikar’s and the Punker’s who are looking to experience something extraordinary.
+
               </p>
             </div>
             <div class="modal-footer">
@@ -839,7 +845,7 @@
             <!-- Modal content-->
             <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:190px;border:2px solid white;">
                 <div class="modal-header">
-                <center><h4 class="modal-title" >Kalsubai</h4></center>
+                <center><h4 class="modal-title" >Dhak Bahiri</h4></center>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -852,7 +858,7 @@
                             echo "Login to book this trip...";
                         }
                         else{                
-                            echo "Confirm Booking to Kalsubai?";
+                            echo "Confirm Booking to Dhak Bahiri?";
                         }
                     ?>
                 </p>
