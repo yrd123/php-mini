@@ -69,6 +69,38 @@
          /* end of top navbar and banner*/
 
         /* grid */
+        
+        /* purchase */
+        #buy{
+          margin-top:10px;
+          margin-bottom:15px;
+        }
+
+        .purchase-card{
+            display: inline-block;
+            margin-top: 15px;
+            margin-right: 7px;
+            background:rgb(0,0,0);
+            height:auto ;
+            color:white;
+            border-radius: 10px;
+            border:3.5px solid white;
+            transition: margin 1s ease;
+            
+          }
+
+          .trekk{
+            margin: 0;
+            width: 286px;
+            height:176px ;
+            border-radius: 7px;
+            
+            border-bottom:5px solid white;
+          }
+     
+          
+        /* purchase ends*/
+
     
         /*end of grid */
 
@@ -84,6 +116,7 @@
             text-align: center;
             font-family: Courier !important;
         }
+
         .inner{
             margin: 0;
             padding-top: 0;
@@ -92,8 +125,6 @@
             font-family: sans-serif;
 
         }
-
-        
         
             /* border-radius: 15px; */
             /* text-align: justify; */
@@ -122,7 +153,6 @@
             font-family: Mistral;
             font-size: 25;
         }
-
         
         #offer-text-head{
             color: rgba(255,205,0, 1);
@@ -168,7 +198,6 @@
         /* background-color: purple; */
 
         }
-
 
         .blog-card{
             display: inline-block;
@@ -536,8 +565,6 @@
 
       <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookModal2">Book</button>
 
-
-
         <div id="bookModal2" class="modal fade" role="dialog" style="opacity:1;">
             <div class="modal-dialog">
             <!-- Modal content-->
@@ -860,89 +887,56 @@
 <!-- end CARDS-->
 <!--grid1 end -->
 
-<!--grid2 start -->
+<section id="buy">
+
 <div class="heading" id="offer-text-head"><h1><span style="color:white">---------</span> Your Previous Trips <span style="color:white">---------</span></h1></div>
-<!-- CARDS -->
-<div class="card-group" style="padding-bottom:15px;">
-  <div class="card" style="border-radius:10px;">
-    <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
-    <div class="card-body" style="border-bottom:1px solid black;border-top:1px solid black;color:white;background:black">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <div class="card-footer">
-      <center>
-            <button type="submit" class="btn btn-info" data-dismiss="modal">Know More</button>
-            &nbsp;
-            <button type="button" class="btn btn-success" data-dismiss="modal">Book</button>
-      </center>
-     
-    </div>
-  </div>
-  <div class="card" style="border-radius:10px;">
-    <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <center>
-            <button type="submit" class="btn btn-info" data-dismiss="modal">Know More</button>
-            &nbsp;
-            <button type="button" class="btn btn-success" data-dismiss="modal">Book</button>
-      </center>
-     
-    </div>
-  </div>
-  <div class="card" style="border-radius:10px;">
-    <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <center>
-            <button type="submit" class="btn btn-info" data-dismiss="modal">Know More</button>
-            &nbsp;
-            <button type="button" class="btn btn-success" data-dismiss="modal">Book</button>
-      </center>
-     
-    </div>
-  </div>
-  <div class="card" style="border-radius:10px;">
-    <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;;padding:3px;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <center>
-            <button type="submit" class="btn btn-info" data-dismiss="modal">Know More</button>
-            &nbsp;
-            <button type="button" class="btn btn-success" data-dismiss="modal">Book</button>
-      </center>
-     
-    </div>
-  </div>
-  <div class="card" style="border-radius:10px;">
-    <img class="card-img-top" src="../images/home/blog1.jpg" alt="Card image cap" style="border-radius:8px;padding:3px;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <center>
-            <button type="submit" class="btn btn-info" data-dismiss="modal">Know More</button>
-            &nbsp;
-            <button type="button" class="btn btn-success" data-dismiss="modal">Book</button>
-      </center>
-     
-    </div>
+<div class="purchase-card">
+  <img src="../images/home/blog1.jpg" alt="Avatar" class="trekk">
+  <div class="card-body">
+  <h5 class="card-title">Kalsubai</h5>
+      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
+      <p class="card-text">Rs. 5000</p>
+    <!-- <a href="#" class="add-to-cart">Add to cart</a> -->
   </div>
 </div>
-<!-- end CARDS-->
 
-<!-- grid2 end -->
+<div class="purchase-card">
+  <img src="../images/home/blog1.jpg" alt="Avatar" class="trekk">
+  <div class="card-body">
+  <h5 class="card-title">Kalsubai</h5>
+      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
+      <p class="card-text">Rs. 5000</p>
+    <!-- <a href="#" class="add-to-cart">Add to cart</a> -->
+  </div>
+</div>
+<div class="purchase-card">
+  <img src="../images/home/blog1.jpg" alt="Avatar" class="trekk">
+  <div class="card-body">
+  <h5 class="card-title">Kalsubai</h5>
+      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
+      <p class="card-text">Rs. 5000</p>
+    <!-- <a href="#" class="add-to-cart">Add to cart</a> -->
+  </div>
+</div>
+<div class="purchase-card">
+  <img src="../images/home/blog1.jpg" alt="Avatar" class="trekk">
+  <div class="card-body">
+  <h5 class="card-title">Kalsubai</h5>
+      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
+      <p class="card-text">Rs. 5000</p>
+    <!-- <a href="#" class="add-to-cart">Add to cart</a> -->
+  </div>
+</div>
+<div class="purchase-card">
+  <img src="../images/home/blog1.jpg" alt="Avatar" class="trekk">
+  <div class="card-body">
+  <h5 class="card-title">Kalsubai</h5>
+      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
+      <p class="card-text">Rs. 5000</p>
+    <!-- <a href="#" class="add-to-cart">Add to cart</a> -->
+  </div>
+</div>
+</section>
 
 <section id ="youtubesection">
 
@@ -957,47 +951,25 @@
 <section id="outer-blog">
 
 <section id="blog-section">
-
-  
   <div class="heading" id="blog-main-head"><h1><span style="color:white">---------</span> Our Blogs <span style="color:white">---------</span></h1></div>
-
   
 <div class="blog-card">
   <img src="../images/home/blog1.jpg" alt="Avatar" class="blog-image">
-
-  
     <h4 class="blog-heading">How Trekking can heal a broken you</h4>
-    
     <a class="blog-link" href="#">Read More</a>
-    
-
 </div>
-
 
 <div class="blog-card">
   <img src="../images/home/blog3.jpg" alt="Avatar" class="blog-image">
-
-  
-    <h4 class="blog-heading">Kedarnatha - A Complete Guide</h4>
-    
+    <h4 class="blog-heading">How Trekking can heal a broken you</h4>
     <a class="blog-link" href="#">Read More</a>
-    
-
 </div>
-
 
 <div class="blog-card">
   <img src="../images/home/blog2.jpg" alt="Avatar" class="blog-image">
-
-  
     <h4 class="blog-heading">Get Lost in the beauty of Himalaya</h4>
-
     <a class="blog-link" href="#">Read More</a>
-    
-
 </div>
-
-
 
 </section>
 </section>
