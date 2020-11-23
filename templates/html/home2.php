@@ -112,9 +112,9 @@
             right: 0;
             left: 0;
             color: rgba(255,205,0, 1);
-            font-size: 20px;
+            font-size: 1.5em !important;
             text-align: center;
-            font-family: Courier !important;
+            font-family: Comic Sans MS !important;
         }
 
         .inner{
@@ -311,7 +311,7 @@
 
 
     <div class="banner">
-        <img src="../images/home/final.jpg" >
+        <img src="../images/home/final.jpg" style="width:100%;">
         <div class="topnav">
         <?php
             include('../../mysqli_connect.php');   
@@ -337,7 +337,7 @@
         <div class="modal-dialog">
       
           <!-- Modal content-->
-          <div class="modal-content" style="background-color: black;color: white;opacity:0.8;top:90px;">
+          <div class="modal-content" style="background-color: black;color: white;opacity:0.8;top:180px;">
             <div class="modal-header">              
               <center><h4 class="modal-title" >Profile</h4></center>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -370,7 +370,7 @@
             <div class="modal-footer">
                 <span>
                 <form action="update_account.php">
-                    <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#confirmDeleteModal">Update</button>
+                    <button type="submit" class="btn btn-warning" data-toggle="modal" style="color:white;" data-target="#confirmDeleteModal">Update</button>
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmDeleteModal">Delete Account</button>
                 </form>
                 <!-- Confirm Delete Modal -->
@@ -395,7 +395,6 @@
                 </div>
             </div>
           </div>
-      
         </div>
       </div>
 
@@ -451,7 +450,7 @@
         <div class="modal-dialog">
       
           <!-- Modal content-->
-          <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:90px;border:2px solid white;">
+          <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:120px;border:2px solid white;">
             <div class="modal-header">
               <center><h4 class="modal-title" >Kalsubai</h4></center>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -543,7 +542,7 @@
         <div class="modal-dialog">
       
           <!-- Modal content-->
-          <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:90px;border:2px solid white;">
+          <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:120px;border:2px solid white;">
             <div class="modal-header">
               <center><h4 class="modal-title" >Peb Fort</h4></center>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -632,7 +631,7 @@
         <div class="modal-dialog">
       
           <!-- Modal content-->
-          <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:90px;border:2px solid white;">
+          <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:120px;border:2px solid white;">
             <div class="modal-header">
               <center><h4 class="modal-title" >Irshalgad</h4></center>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -723,7 +722,7 @@
         <div class="modal-dialog">
       
           <!-- Modal content-->
-          <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:90px;border:2px solid white;">
+          <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:120px;border:2px solid white;">
             <div class="modal-header">
               <center><h4 class="modal-title" >Visapur</h4></center>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -814,7 +813,7 @@
         <div class="modal-dialog">
       
           <!-- Modal content-->
-          <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:90px;border:2px solid white;">
+          <div class="modal-content" style="background-color: black;color: white;opacity:0.95;top:120px;border:2px solid white;">
             <div class="modal-header">
               <center><h4 class="modal-title" >Dhak Bahiri</h4></center>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -895,53 +894,44 @@
 
 <section id="buy">
 
-<div class="heading" id="offer-text-head"><h1><span style="color:white">---------</span> Your Previous Trips <span style="color:white">---------</span></h1></div>
-<div class="purchase-card">
-  <img src="../images/home/blog1.jpg" alt="Avatar" class="trekk">
-  <div class="card-body">
-  <h5 class="card-title">Kalsubai</h5>
-      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
-      <p class="card-text">Rs. 5000</p>
-    <!-- <a href="#" class="add-to-cart">Add to cart</a> -->
-  </div>
-</div>
+<?php
+include '../../mysqli_connect.php';
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+}
+if(isset($_SESSION['username']) and isset($_SESSION['loggedin']) and $_SESSION['loggedin']==true){
+  echo "<div class='heading' id='offer-text-head'><h1><span style='color:white'>---------</span> Your Previous Trips <span style='color:white'>---------</span></h1></div>";
+  $email=$_SESSION['username'];
+  $select_trip_user_query="select * from trip_user where email='$email';";
+  $select_trip_query="select * from trip;";
+  $rows=mysqli_query($link,$select_trip_user_query);
+ 
+  while($row=mysqli_fetch_array($rows,MYSQLI_BOTH)){
+    $trip=mysqli_query($link,$select_trip_query);
+    while($place=mysqli_fetch_array($trip,MYSQLI_BOTH)){
+    if($row['trip_id']==$place['tripId'] ){
+     
+     echo "<div class='purchase-card'>
+      <img src='../images/home/peb.jpg' alt='Avatar' class='trekk'>
+      <div class='card-body'>
+      <h5 class='card-title'>{$place['trip_name']}</h5>
+          <p class='card-text'><span>{$place['height']} ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='align-item:right;'>{$place['days']}</span></p>
+          <p class='card-text'>Rs.&nbsp;{$place['price']}</p>
+          <p class='card-text'>Time: {$row['booking_time']}</p>
+      </div>
+    </div>";
+    }
+    
+  }
 
-<div class="purchase-card">
-  <img src="../images/home/blog1.jpg" alt="Avatar" class="trekk">
-  <div class="card-body">
-  <h5 class="card-title">Kalsubai</h5>
-      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
-      <p class="card-text">Rs. 5000</p>
-    <!-- <a href="#" class="add-to-cart">Add to cart</a> -->
-  </div>
-</div>
-<div class="purchase-card">
-  <img src="../images/home/blog1.jpg" alt="Avatar" class="trekk">
-  <div class="card-body">
-  <h5 class="card-title">Kalsubai</h5>
-      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
-      <p class="card-text">Rs. 5000</p>
-    <!-- <a href="#" class="add-to-cart">Add to cart</a> -->
-  </div>
-</div>
-<div class="purchase-card">
-  <img src="../images/home/blog1.jpg" alt="Avatar" class="trekk">
-  <div class="card-body">
-  <h5 class="card-title">Kalsubai</h5>
-      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
-      <p class="card-text">Rs. 5000</p>
-    <!-- <a href="#" class="add-to-cart">Add to cart</a> -->
-  </div>
-</div>
-<div class="purchase-card">
-  <img src="../images/home/blog1.jpg" alt="Avatar" class="trekk">
-  <div class="card-body">
-  <h5 class="card-title">Kalsubai</h5>
-      <p class="card-text"><span>1242 ft.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="align-item:right;">6 Days</span></p>
-      <p class="card-text">Rs. 5000</p>
-    <!-- <a href="#" class="add-to-cart">Add to cart</a> -->
-  </div>
-</div>
+  }
+
+
+}
+
+?>
+
 </section>
 
 <section id ="youtubesection">
